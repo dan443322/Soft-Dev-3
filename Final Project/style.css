@@ -15,7 +15,7 @@
 
 p {
   color: var(--th-color4);
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1px;
   line-height: 30px;
 }
@@ -266,10 +266,10 @@ button:hover {
 
 .About .first_half img {
   position: relative;
-  width: 250px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
-  border-radius: 20%;
+  border-radius: 50%;
   border: 5px solid var(--th-color2);
   background-position: 100%, 100%;
   filter: drop-shadow(10px 6px 5px var(--th-color3));
@@ -278,6 +278,28 @@ button:hover {
 .About .first_half .box {
   width: auto;
   flex: 0 0 calc(30% - 90px);
+  padding: 1rem;
+  border: 2px solid #13141d;
+  border-radius: 1rem;
+  background: linear-gradient(
+    321deg,
+    hsla(0, 0%, 26%, 0.34) 0%,
+    hsla(0, 0%, 25.16%, 0.348) 8.8%,
+    hsla(0, 0%, 24.3%, 0.356) 16.1%,
+    hsla(0, 0%, 23.41%, 0.364) 22.3%,
+    hsla(0, 0%, 22.48%, 0.372) 27.6%,
+    hsla(0, 0%, 21.53%, 0.379) 32.1%,
+    hsla(0, 0%, 20.54%, 0.387) 36.4%,
+    hsla(0, 0%, 19.52%, 0.395) 40.4%,
+    hsla(0, 0%, 18.45%, 0.402) 44.6%,
+    hsla(0, 0%, 17.34%, 0.409) 49.2%,
+    hsla(0, 0%, 16.18%, 0.417) 54.5%,
+    hsla(0, 0%, 14.95%, 0.424) 60.7%,
+    hsla(0, 0%, 13.65%, 0.431) 68.1%,
+    hsla(0, 0%, 12.25%, 0.437) 76.9%,
+    hsla(0, 0%, 10.72%, 0.444) 87.5%,
+    hsla(0, 0%, 9%, 0.45) 100%
+  );
 }
 
 .first_half .box h4 {
@@ -290,7 +312,6 @@ button:hover {
 
 .first_half .box p {
   width: auto;
-  font-size: 20px;
 }
 
 /*About Section END*/
@@ -415,4 +436,9 @@ form textarea {
   padding-top: 4px;
   text-align: center;
 }
+
+.footer-copyright p {
+  font-size: 15px;
+}
+
 /*Footer Section End*/
