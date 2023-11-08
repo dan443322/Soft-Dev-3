@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;700;800;900&display=swap");
+:root {
+  --font-main: "Inter", sans-serif;
+  --colo-primary: #db4444;
+  --colo-dark-1: #000000;
+  --colo-dark-2: #7d8184;
+  --colo-white-1: #ffffff;
+  --colo-white-2: #f5f5f5;
+  --color-green: #00d656;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 62.5%;
+    font-family: 'League Spartan', sans-serif;
+    align-items: center;
+    justify-content: center;
+    background:  white;
+}
+
+.nav-content{
+    padding: 5px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: gray;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.logo-container img{
+    display: block;
+    width: 50px;
+    margin: auto;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-items{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-item{
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    position: relative;
+    padding: 0 0.5rem;
+    text-shadow: black;
+}
+
+.nav-item a:hover ,  .nav-item a.active{
+    color: 	red;
+    transition: 0.2s ease;
+}
+.nav-item a:hover::after , .nav-item a.active::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background:	red;
+    position: absolute;
+    right: 0%;
+    bottom: -5px;
+    border-radius: 8px;
+    transition: 0.5s ease;
+}
+
+.hero-container{
+    background: black;
+    padding: 0 80px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    /* background-color:   #d8d9db; */
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+h3{
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    /* color: rgb(113, 112, 112); */
+}
+h1{
+    font-size: 3.3rem;
+    /* padding: 0.5rem 0; */
+    font-weight: bold;
+    color: 	#2E8B57;
+}
+p{
+    font-size: 1rem;
+    padding: 0.5rem;
+    color: rgb(113, 112, 112);
+}
+.hero-btn{
+    margin: 0.5rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-weight:  bold;
+    border: 2px  solid #981107 ;
+    font-family: 'League Spartan', sans-serif;
+    transition: 0.5s;
+    letter-spacing: 0.15em;
+    background-color: #981107;
+    color: white;
+}
+.hero-btn:hover{
+    background: #2E8B57 ;
+    color: white;
+    border: 2px solid #0f0201;
+    transform: scale(1.1);
+}
+
+
+.header_container {
+    width: 100%;
+    display: flex;
+  }
+  .header_filter {
+    width: 18%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+.header_filter_link{
+    font-family: arial;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    padding: 60px 0;
+  }
+  .slide-container {
+    margin: 0 30px;
+    overflow: hidden;
+  }
+  .card {
+    background: #fff;
+    border-radius: 8px;
+  }
+  .card .image-box {
+    height: 300px;
+  }
+  .card .image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+  .card .profile-details {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 15px;
+  }
+  .card .profile-details img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+  .profile-details .name {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .profile-details .job {
+    font-size: 12px;
+    font-weight: 500;
+    color: #4d4d4d;
+  }
+  
+  .swiper-navBtn {
+    color: #000;
+    height: 50px;
+    width: 50px;
+    transform: translateY(-40%);
+    background: #fff;
+    border-radius: 50%;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    font-size: 24px;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: #333;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .swiper-navBtn {
+      display: none;
+    }
+  }
+
+
+
+
+
+
+
+  .trending {
+    margin-top: 2rem ;
+    background-color: var(--colo-dark-1);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-gap: 2rem;
+    align-items: center;
+  }
+  .trending_img {
+    width: 400px;
+  }
+  .trending_p {
+    color: var(--color-green);
+  }
+  .trending_title {
+    color: var(--colo-white-1);
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  .trending_btn {
+    background-color: var(--color-green);
+    padding: 1rem 2rem;
+    color: var(--colo-white-1);
+  }
+  .products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-gap: 2rem;
+  }
+  
+
+
+
+
+
+  .categories {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-gap: 5px;
+  }
+  .category {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid var(--colo-white-2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .category:hover {
+    background-color: var(--colo-primary);
+  }
+  .category_icon {
+    width: 3.5rem;
+    height: auto;
+  }
+
+
+
+
+
+  .footer {
+    margin-top: 2rem;
+    background-color: var(--colo-dark-1);
+  }
+  .footer_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 1rem;
+    padding: 2rem 0rem;
+    color: var(--colo-white-1);
+  }
+  .footer_logo {
+    font-size: 3rem;
+    color: var(--colo-white-1);
+    font-weight: 700;
+  }
+  .footer_p {
+    margin-top: 1.2rem;
+  }
+  .footer_item{
+    padding-left: 5rem;
+  }
+  .footer_item_titl {
+    margin-bottom: 1.2rem;
+  }
+  .footer_list_item {
+    margin: 0.5rem 0rem;
+  }
+  
+  @media only screen and (max-width: 1070px) {
+    .header_container {
+      flex-direction: column;
+    }
+    .header_filter {
+      display: none;
+    }
+  }
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  .hamburger > svg {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  @media only screen and (max-width: 800px) {
+    .top_nav {
+      display: none;
+    }
+    .nav_list {
+      display: none;
+    }
+    .nav_items {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .gallery {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
