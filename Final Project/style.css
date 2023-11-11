@@ -320,6 +320,8 @@ button:hover {
 .Walkthrough {
   background-color: var(--th-color2);
   height: auto;
+  width: fit-content;
+  padding-right: 2%;
 }
 
 .Walkthrough h2 {
@@ -336,18 +338,44 @@ button:hover {
 }
 
 .Walkthrough .walkthrough-steps li {
-  border: 3px solid var(--th-color1);
   display: flex;
-  margin: 10px 0 0 10px;
+  margin: 20px 0 0 20px;
+  padding: 20px;
+  background: rgba(255, 1, 1, 0.322);
+  border-radius: 2rem;
 }
 
 .Walkthrough .face1 {
   position: relative;
-  float: left;
   width: 30%;
-  height: 110px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: #8d99af;
+  border: 2px solid var(--th-color4);
+  border-radius: 1rem;
+  margin-right: 4%;
 }
 
+.Walkthrough .face1 i {
+  font-size: 80px;
+  margin: 10px 0 0 10px;
+  padding-bottom: 10px;
+}
+.Walkthrough .face1 h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Walkthrough .face2 {
+  margin-right: 4%;
+}
+
+.Walkthrough .face2 p {
+  margin-top: 20px;
+}
 /*Walkthrough Section End*/
 
 /*Contact Us Section Start*/
