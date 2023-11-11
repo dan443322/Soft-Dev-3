@@ -319,6 +319,7 @@ button:hover {
 /*Walkthrough Section Start*/
 .Walkthrough {
   background-color: var(--th-color2);
+  height: auto;
 }
 
 .Walkthrough h2 {
@@ -328,6 +329,23 @@ button:hover {
   letter-spacing: 1px;
   padding-top: 50px;
   margin-bottom: 40px;
+}
+.Walkthrough .walkthrough-steps ol {
+  list-style: none;
+  display: block;
+}
+
+.Walkthrough .walkthrough-steps li {
+  border: 3px solid var(--th-color1);
+  display: flex;
+  margin: 10px 0 0 10px;
+}
+
+.Walkthrough .face1 {
+  position: relative;
+  float: left;
+  width: 30%;
+  height: 110px;
 }
 
 /*Walkthrough Section End*/
