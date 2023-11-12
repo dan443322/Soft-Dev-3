@@ -1,0 +1,147 @@
+body{
+    font-family: arial;
+   background-color: #000000;
+   margin: 0;
+
+}
+
+/*---------Login Button ------------------------- */
+.login-setup{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+}
+.login-setup button{
+    width: 100px;
+    height:50px;
+    cursor: pointer;
+}
+
+/*---------- the div that holds the entire log in form ---------------- */
+.log{
+    position: fixed;
+    top: -150%;
+    left:50%;
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(1.25);
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+    width: 400px;
+    height: 450px;
+    background:rgb(241, 209, 209);
+    color: rgb(26, 19, 19);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+/*----------- for closing & opening the log div -------------------*/
+.log.active{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50% ,-50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+}
+.log h2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/*---------- the parent div for Gmail & Password ------------------*/
+.log .input-box{
+    height: 40px;
+    width: 100%;
+
+    border-bottom: 2px solid black;
+    margin:30px 0;
+}
+.input-box input{
+    width: 200px;
+    height: 25px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    color: #000000;
+}
+.input-box i{
+    color: black;
+    height: 20px;
+    width: 20px;
+}
+.input-box label{
+    font-size: 20px;
+}
+
+/*----------- div for the Login button -------------------*/
+.log .submit-box{
+    width: 100%;
+    margin: 10px 0;
+}
+.submit-box{
+    width: 100%;
+    height: 40px;
+    background: brown;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.submit-box h3{
+    text-align: center;
+    transform: translateY(10px);
+}
+
+/*----------- div for the Register button -------------------*/
+.sign-register{
+    text-align: center;
+    font-size: 15px;
+}
+.sign-register a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.sign-register a:hover{
+    text-decoration: underline;
+}
+.pass-forgot{
+    margin-top: -10px;
+    margin-bottom:-5px;
+
+}
+
+/*----------- div for the Forgot Password -------------------*/
+.pass-forgot a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.pass-forgot a:hover{
+    text-decoration: underline;
+}
+
+/*----------- css for the icons -------------------*/
+.fa-circle-xmark{
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    font-size: 30px;
+    color: black;
+}
+.fa-envelope{
+    color: white;
+
+}
+.fa-lock{
+    color: rgb(255, 255, 255);
+}
+

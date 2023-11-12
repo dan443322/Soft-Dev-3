@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css">
+</head>
+
+<body>
+
+    <div class="login-setup">
+        <button onclick="togglePopup()">Login</button>
+    </div>
+    <br><br><br><br>
+   
+    <div class="log" id="log" style="margin: auto;">
+        
+        <div class="close" onclick="togglePopup()"><i class="fa-solid fa-circle-xmark"></i></div>
+
+        <form action="#"> 
+            <h2>Log In</h2>
+        <div class="input-box" style="margin-top: 30px;">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="text" id="email" name="email" placeholder="**********" required>
+            <label for="email">Gmail</label>
+        </div>
+        <div class="input-box">
+            <i class="fa-solid fa-lock"></i>
+            <input type="text" id="password" name="password" placeholder="**********" required>
+            <label for="password">Password</label>
+        </div>
+       
+        <div class="pass-forgot"><a href="register.html">Forgot Password?</a></div>
+
+        <a href="../Ric/store.html" style="text-decoration: none;">
+        <div class="submit-box">
+           <h3>Login</h3>  
+        </div>
+    </a>
+        <div class="sign-register">Don't have an account? <a href="Register.html">Register</a></div>
+
+        </form>
+    </div>
+    <br><br><br>
+
+    <script>
+        function togglePopup() {
+            var log = document.getElementById('log');
+           log.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+
+</html>
