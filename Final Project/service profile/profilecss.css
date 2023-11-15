@@ -3,7 +3,7 @@
   padding: 0;
   font-family: "Josefin Sans", sans-serif;
   box-sizing: border-box;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 :root {
@@ -188,6 +188,12 @@ header .pic-logo {
   -webkit-text-fill-color: transparent;
 }
 /*Star rating End*/
+
+/* rated by number start*/
+.number-of-rates {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
 
 /* hire button start*/
 
