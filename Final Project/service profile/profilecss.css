@@ -4,14 +4,21 @@
   font-family: "Josefin Sans", sans-serif;
   box-sizing: border-box;
   outline: 1px solid red;
+  transition: all 0.3s ease-in-out;
 }
 
 :root {
   --th-color1: #b40018;
   --th-color2: #13141d;
+  --thcolor2-variant1: rgb(20, 20, 20);
+  --thcolor2-variant1: rgb(46, 36, 36);
   --th-color3: #8d99af;
   --th-color4: #ffffff;
   --h6-color: rgb(226, 166, 0);
+}
+
+body {
+  background: var(--th-color2);
 }
 
 /*Preset Font Sizes*/
@@ -29,9 +36,13 @@ h1 {
 }
 
 h2 {
-  color: var(--th-color4);
-  font-size: 60px;
-  letter-spacing: 1px;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
 h3 {
@@ -64,6 +75,89 @@ button:hover {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+
+/* Navigation bar start*/
+.navbar {
+  width: 100vw;
+
+  padding: 2.2rem 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    to bottom left,
+    hsl(0, 100%, 29.02%) 0%,
+    hsl(0, 100%, 27.97%) 8.7%,
+    hsl(0, 100%, 26.79%) 15.7%,
+    hsl(0, 100%, 25.5%) 21.3%,
+    hsl(0, 100%, 24.09%) 26%,
+    hsl(0, 100%, 22.58%) 29.9%,
+    hsl(0, 100%, 20.95%) 33.5%,
+    hsl(0, 100%, 19.23%) 36.9%,
+    hsl(0, 100%, 17.4%) 40.7%,
+    hsl(0, 100%, 15.47%) 44.9%,
+    hsl(0, 100%, 13.45%) 50.1%,
+    hsl(0, 100%, 11.33%) 56.4%,
+    hsl(0, 100%, 9.1%) 64.3%,
+    hsl(0, 100%, 6.74%) 73.9%,
+    hsl(0, 100%, 4.18%) 85.7%,
+    hsl(0, 0%, 0%) 100%
+  );
+
+  width: 100%;
+  height: 15px;
+  position: fixed;
+  z-index: 1;
+}
+
+.logo {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  align-items: center;
+  text-align: center;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  image-rendering: optimizeQuality;
+  object-fit: cover;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  margin-right: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--th-color4);
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: var(--th-color1);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+/*NavBar End*/
 
 /*Header part Start */
 header {
@@ -289,15 +383,14 @@ About Section END
 
 /* Output Highligts Start*/
 
-#highlights{
+#highlights {
   background: var(--th-color2);
   text-align: center;
 }
 
-#highlights h2{
+#highlights h2 {
   padding-top: 4rem;
   text-align: center;
-
 }
 
 /*picture highlights*/
@@ -355,39 +448,35 @@ About Section END
 
 /* Output Highligts END*/
 
-
 /*Testimony start*/
-#testimony{
+#testimony {
   background: var(--th-color3);
   padding: 0 5%;
 }
 
-#testimony .testimony-box{
+#testimony .testimony-box {
   background: var(--th-color2);
   padding: 0 5%;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   width: auto;
-
 }
 
-#testimony h3{
+#testimony h3 {
   padding-top: 4rem;
   text-align: center;
-  
 }
 
-
-#testimony .average{
+#testimony .average {
   display: flex;
   flex-direction: row;
 }
 
-#testimony .average .product-rating-overview__filters{
+#testimony .average .product-rating-overview__filters {
   display: flex;
   flex-direction: row;
 }
 
-#testimony .average .product-rating-overview__filter{
+#testimony .average .product-rating-overview__filter {
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -397,14 +486,14 @@ About Section END
   min-width: 6.25rem;
   text-align: center;
   padding: 0 0.625rem;
-  color: rgba(0,0,0,.8);
+  color: rgba(0, 0, 0, 0.8);
   background-color: #fff;
-  border: 1px solid rgba(0,0,0,.09);
+  border: 1px solid rgba(0, 0, 0, 0.09);
   box-sizing: border-box;
   display: inline-block;
   margin-right: 0.5rem;
   text-decoration: none;
-  color: rgba(0,0,0,.87);
+  color: rgba(0, 0, 0, 0.87);
   text-transform: capitalize;
   border-radius: 2px;
   margin-bottom: 0.3125rem;
