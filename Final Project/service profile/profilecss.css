@@ -3,7 +3,7 @@
   padding: 0;
   font-family: "Josefin Sans", sans-serif;
   box-sizing: border-box;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 :root {
@@ -25,6 +25,12 @@ p {
 h1 {
   font-size: 60px;
   color: #8d99af;
+  letter-spacing: 1px;
+}
+
+h2 {
+  color: var(--th-color4);
+  font-size: 60px;
   letter-spacing: 1px;
 }
 
@@ -282,6 +288,19 @@ About Section END
 */
 
 /* Output Highligts Start*/
+
+#highlights{
+  background: var(--th-color2);
+  text-align: center;
+}
+
+#highlights h2{
+  padding-top: 4rem;
+  text-align: center;
+
+}
+
+/*picture highlights*/
 #highlights .img-scrollable {
   position: relative;
   max-width: 48rem;
@@ -332,4 +351,64 @@ About Section END
   transform: scale(1.2);
   background-color: #fff;
 }
+/*picture highlights end*/
+
 /* Output Highligts END*/
+
+
+/*Testimony start*/
+#testimony{
+  background: var(--th-color3);
+  padding: 0 5%;
+}
+
+#testimony .testimony-box{
+  background: var(--th-color2);
+  padding: 0 5%;
+  border-radius: .4rem;
+  width: auto;
+
+}
+
+#testimony h3{
+  padding-top: 4rem;
+  text-align: center;
+  
+}
+
+
+#testimony .average{
+  display: flex;
+  flex-direction: row;
+}
+
+#testimony .average .product-rating-overview__filters{
+  display: flex;
+  flex-direction: row;
+}
+
+#testimony .average .product-rating-overview__filter{
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  height: 2rem;
+  line-height: 2rem;
+  min-width: 6.25rem;
+  text-align: center;
+  padding: 0 0.625rem;
+  color: rgba(0,0,0,.8);
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.09);
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 0.5rem;
+  text-decoration: none;
+  color: rgba(0,0,0,.87);
+  text-transform: capitalize;
+  border-radius: 2px;
+  margin-bottom: 0.3125rem;
+  margin-top: 0.3125rem;
+}
+
+/*Testimony end*/
