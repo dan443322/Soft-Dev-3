@@ -1,0 +1,635 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+:root {
+  --th-color1: #b40018;
+  --th-color2: #13141d;
+  --th-color3: #ffffcc;
+  --th-color4: #ffffff;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+p {
+  color: var(--th-color4);
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+h3 {
+  color: var(--th-color4);
+  font-size: 50px;
+  text-align: center;
+}
+
+button {
+  transition: all 0.1s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Top part of the page... start */
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    url(Images/crowd-1056764_1280.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/* Navigation bar start*/
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    to bottom left,
+    hsl(0, 100%, 29.02%) 0%,
+    hsl(0, 100%, 27.97%) 8.7%,
+    hsl(0, 100%, 26.79%) 15.7%,
+    hsl(0, 100%, 25.5%) 21.3%,
+    hsl(0, 100%, 24.09%) 26%,
+    hsl(0, 100%, 22.58%) 29.9%,
+    hsl(0, 100%, 20.95%) 33.5%,
+    hsl(0, 100%, 19.23%) 36.9%,
+    hsl(0, 100%, 17.4%) 40.7%,
+    hsl(0, 100%, 15.47%) 44.9%,
+    hsl(0, 100%, 13.45%) 50.1%,
+    hsl(0, 100%, 11.33%) 56.4%,
+    hsl(0, 100%, 9.1%) 64.3%,
+    hsl(0, 100%, 6.74%) 73.9%,
+    hsl(0, 100%, 4.18%) 85.7%,
+    hsl(0, 0%, 0%) 100%
+  );
+
+  width: 100%;
+  height: 15px;
+  position: fixed;
+  z-index: 1;
+}
+
+.logo {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: var(--th-color3);
+  transition: 0.3s ease-in-out;
+}
+
+.logo em {
+  color: var(--th-color1);
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  margin-right: 30px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--th-color4);
+  text-transform: uppercase;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: var(--th-color1);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+}
+
+/*NavBar End*/
+
+/*general code of every part... start*/
+.part {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+/*general code of every part... end*/
+
+.top_page {
+  position: absolute;
+  top: 30%;
+  text-align: center;
+}
+
+.top_page h1 {
+  font-size: 70px;
+  margin-top: 80px;
+  font-weight: 100;
+  line-height: 25px;
+  color: var(--th-color3);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top_page h1 em {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top_page h3 {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  color: var(--th-color4);
+}
+
+.top_page em {
+  color: var(--th-color1);
+}
+
+.top_page button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+
+  font-weight: bold;
+  border: 2px solid var(--th-color1);
+  border-radius: 25px;
+  background: transparent;
+  color: var(--th-color4);
+  position: relative;
+  overflow: hidden;
+}
+
+.top_page button:hover {
+  background: var(--th-color1);
+}
+
+/* Top part of the page... END */
+
+/*About Section Start*/
+
+.About {
+  display: block;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  justify-content: center;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(19, 20, 29, 1) 79%
+  );
+}
+
+.About .second_half {
+  height: auto;
+  width: 100%;
+}
+
+/*start of "About Event Ease"*/
+.About .second_half h3 {
+  color: var(--th-color4);
+  font-size: 50px;
+  text-align: center;
+}
+
+.About .second_half h3 span {
+  color: var(--th-color3);
+  letter-spacing: 1px;
+}
+.About .second_half h3 em {
+  color: var(--th-color1);
+  letter-spacing: 2px;
+}
+
+.About .second_half p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+/*End of "About Event Ease"*/
+
+.About .how_button {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  text-align: center;
+}
+
+.About button {
+  background-color: var(--th-color1);
+  color: var(--th-color4);
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+}
+
+.About .first_half {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.About .first_half .image {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 2vh;
+}
+
+.About .first_half img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--th-color2);
+  background-position: 100%, 100%;
+  filter: drop-shadow(10px 6px 5px var(--th-color3));
+}
+
+.About .first_half .box {
+  width: auto;
+  flex: 0 0 calc(30% - 90px);
+  padding: 1rem;
+  border: 2px solid #13141d;
+  border-radius: 1rem;
+  background: linear-gradient(
+    321deg,
+    hsla(0, 0%, 26%, 0.34) 0%,
+    hsla(0, 0%, 25.16%, 0.348) 8.8%,
+    hsla(0, 0%, 24.3%, 0.356) 16.1%,
+    hsla(0, 0%, 23.41%, 0.364) 22.3%,
+    hsla(0, 0%, 22.48%, 0.372) 27.6%,
+    hsla(0, 0%, 21.53%, 0.379) 32.1%,
+    hsla(0, 0%, 20.54%, 0.387) 36.4%,
+    hsla(0, 0%, 19.52%, 0.395) 40.4%,
+    hsla(0, 0%, 18.45%, 0.402) 44.6%,
+    hsla(0, 0%, 17.34%, 0.409) 49.2%,
+    hsla(0, 0%, 16.18%, 0.417) 54.5%,
+    hsla(0, 0%, 14.95%, 0.424) 60.7%,
+    hsla(0, 0%, 13.65%, 0.431) 68.1%,
+    hsla(0, 0%, 12.25%, 0.437) 76.9%,
+    hsla(0, 0%, 10.72%, 0.444) 87.5%,
+    hsla(0, 0%, 9%, 0.45) 100%
+  );
+}
+
+.first_half .box h4 {
+  text-align: center;
+  font-size: 30px;
+  width: auto;
+  color: var(--th-color3);
+  margin-bottom: 2vh;
+}
+
+.first_half .box p {
+  width: auto;
+}
+
+/*About Section END*/
+
+/*Walkthrough Section Start*/
+.Walkthrough {
+  padding-top: 50px;
+  background-color: var(--th-color2);
+  height: auto;
+  width: fit-content;
+  padding-right: 2%;
+}
+
+.Walkthrough h2 {
+  color: var(--th-color4);
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-top: 50px;
+  margin-bottom: 40px;
+}
+.Walkthrough .walkthrough-steps ol {
+  list-style: none;
+  display: block;
+}
+
+.Walkthrough .walkthrough-steps li {
+  display: flex;
+  margin: 20px 0 0 20px;
+  padding: 20px;
+  background: rgba(255, 1, 1, 0.322);
+  border-radius: 2rem;
+}
+
+.Walkthrough .face1 {
+  position: relative;
+  width: 30%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: #8d99af;
+  border: 2px solid var(--th-color4);
+  border-radius: 1rem;
+  margin-right: 4%;
+}
+
+.Walkthrough .face1 i {
+  font-size: 80px;
+  margin: 10px 0 0 10px;
+  padding-bottom: 10px;
+}
+.Walkthrough .face1 h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Walkthrough .face2 {
+  margin-right: 4%;
+}
+
+.Walkthrough .face2 p {
+  margin-top: 20px;
+}
+/*Walkthrough Section End*/
+
+/*Contact Us Section Start*/
+.Contact_Us {
+  background: var(--th-color2);
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 6rem;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact-form {
+  position: relative;
+  align-items: center;
+  margin-left: 100px;
+}
+.contact-form p {
+  margin-bottom: 1.2rem;
+}
+
+.contact-form form input,
+form textarea {
+  width: 85%;
+  border: none;
+  outline: none;
+  padding: 17px;
+  margin-left: 1.2rem;
+  background: var(--th-color3);
+  color: #ffffff;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+}
+
+.contact-form textarea {
+  resize: none;
+  min-height: 100px;
+  height: 150px;
+}
+
+.contact-form .button {
+  display: inline-block;
+  margin-left: 30%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background: var(--th-color1);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 2px solid black;
+  border-radius: 25px;
+  width: 220px;
+}
+
+.contact-form .button:hover {
+  transform: scale(1.1);
+}
+
+.logoo {
+  text-decoration: none;
+  font-size: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: var(--th-color3);
+  text-align: center;
+}
+
+.logoo em {
+  color: var(--th-color1);
+}
+
+.contact-info p {
+  text-align: center;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  color: var(--th-color4);
+}
+
+.contact-info ul li {
+  padding-left: 7rem;
+  margin: 1.4rem;
+}
+
+.contact-info ul span {
+  vertical-align: middle;
+  margin-right: 2rem;
+  font-size: 40px;
+}
+
+/*Contact Section End*/
+
+/*Footer Section Start*/
+.Footer {
+  height: 5vh;
+  background: var(--th-color1);
+}
+
+.footer-copyright {
+  padding-top: 4px;
+  text-align: center;
+}
+
+.footer-copyright p {
+  font-size: 15px;
+}
+
+/*Footer Section End*/
+
+
+body{
+  font-family: arial;
+ background-color: #000000;
+ margin: 0;
+
+}
+
+
+/*---------- the div that holds the entire log in form ---------------- */
+.log{
+  position: fixed;
+  top: -150%;
+  left:50%;
+  opacity: 0;
+  transform: translate(-50%,-50%) scale(1.25);
+  transition: top 0ms ease-in-out 200ms,
+              opacity 200ms ease-in-out 0ms,
+              transform 200ms ease-in-out 0ms;
+  width: 400px;
+  height: 450px;
+  background:#ffffcc;
+  color: rgb(26, 19, 19);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+/*----------- for closing & opening the log div -------------------*/
+.log.active{
+  z-index: 2;
+  top: 50%;
+  opacity: 1;
+  transform: translate(-50% ,-50%) scale(1);
+  transition: top 0ms ease-in-out 0ms,
+              opacity 200ms ease-in-out 0ms,
+              transform 350ms ease-in-out 0ms;
+        
+}
+.log h2{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/*---------- the parent div for Gmail & Password ------------------*/
+.log .input-box{
+  height: 40px;
+  width: 100%;
+
+  border-bottom: 2px solid black;
+  margin:30px 0;
+}
+.input-box input{
+  width: 200px;
+  height: 25px;
+  font-size: 20px;
+  border: none;
+  background: none;
+  color: #000000;
+}
+.input-box i{
+  color: black;
+  height: 20px;
+  width: 20px;
+}
+.input-box label{
+  font-size: 20px;
+}
+
+/*----------- div for the Login button -------------------*/
+.log .submit-box{
+  width: 100%;
+  margin: 10px 0;
+}
+.submit-box{
+  width: 100%;
+  height: 40px;
+  background: brown;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.submit-box h3{
+  font-size: 25px;
+  text-align: center;
+  transform: translateY(10px);
+}
+
+/*----------- div for the Register button -------------------*/
+.sign-register{
+  text-align: center;
+  font-size: 15px;
+}
+.sign-register a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+.sign-register a:hover{
+  text-decoration: underline;
+}
+.pass-forgot{
+  margin-top: -10px;
+  margin-bottom:-5px;
+
+}
+
+/*----------- div for the Forgot Password -------------------*/
+.pass-forgot a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+.pass-forgot a:hover{
+  text-decoration: underline;
+}
+
+/*----------- css for the icons -------------------*/
+.fa-circle-xmark{
+  cursor: pointer;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  font-size: 30px;
+  color: black;
+}
+.fa-envelope{
+  color: white;
+
+}
+.fa-lock{
+  color: rgb(255, 255, 255);
+}
+
