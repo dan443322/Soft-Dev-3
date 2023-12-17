@@ -4,6 +4,7 @@
   font-family: "Josefin Sans", sans-serif;
   box-sizing: border-box;
   /* outline: 1px solid red; */
+  transition: all 0.1s ease-in-out;
 }
 
 :root {
@@ -46,9 +47,9 @@ button:hover {
 }
 /* Navigation bar start*/
 .navbar {
-  width: 85%;
-  margin: auto;
-  padding: 35px 0;
+  width: auto;
+
+  padding: 2.2rem 4%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -80,17 +81,25 @@ button:hover {
 
 .logo {
   cursor: pointer;
-  text-decoration: none;
   font-size: 20px;
   margin-left: 30px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  color: var(--th-color3);
+
   transition: 0.3s ease-in-out;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--th-color3);
 }
 
 .logo em {
   color: var(--th-color1);
+}
+.logo a:hover {
+  color: white;
+  transition: all 0.3s ease-in-out;
 }
 
 .logo:hover {
@@ -125,6 +134,9 @@ button:hover {
 
 .navbar ul li:hover::after {
   width: 100%;
+}
+
+.login-signup button {
 }
 
 /*NavBar End*/
